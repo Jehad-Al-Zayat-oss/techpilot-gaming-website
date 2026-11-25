@@ -4,7 +4,7 @@ A modern and responsive gaming gear website built with HTML, CSS, and JavaScript
 
 ##  Live Demo
 
-[View Live Demo](YOUR_LIVE_DEMO_LINK)
+[View Live Demo](https://jehad-al-zayat-oss.github.io/techpilot-gaming-website/)
 
 ##  Screenshots
 
