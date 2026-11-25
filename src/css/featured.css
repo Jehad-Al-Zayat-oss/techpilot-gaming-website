@@ -1,0 +1,45 @@
+:root {
+  --bg-color: #1e1e1e;
+  --main-color: #0bff46;
+  --second-color: #333333;
+}
+.card {
+  background-color: var(--second-color);
+  transition: 0.3s;
+  max-height: 450px;
+  height: 450px;
+}
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 0 0 2px #0bff46;
+}
+.card .image {
+  height: 250px;
+  max-height: 250px;
+}
+.card .image img {
+  max-width: 200px;
+}
+.card .info > span {
+  color: var(--main-color);
+}
+.card .info > p,
+.card .info > h4 {
+  font-size: 0.8rem;
+}
+.card .info > button {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.card .info > button:hover {
+  background-color: #02751f;
+  color: #fff;
+}
+.cards .center {
+  transform: translateY(-20px);
+}
+.carousel-indicators button {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
+}

@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #1e1e1e;
+  --main-color: #0bff46;
+  --second-color: #333333;
+}
+* {
+  box-sizing: border-box !important;
+}
+
+.why-choose-us {
+  background-color: var(--bg-color);
+}
+.why-choose-us .box {
+  background-color: var(--second-color);
+  height: 350px;
+  max-height: 350px;
+  transition: 0.3s;
+}
+.why-choose-us .box i {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: var(--main-color);
+  font-size: 1rem;
+  color: var(--bg-color) !important;
+}
+.why-choose-us .box:hover {
+  box-shadow: 0 0 0 2px #0bff46;
+}

@@ -1,0 +1,30 @@
+:root {
+  --main-color: #0bff46;
+}
+.landing {
+ min-height: 100dvh;
+ min-height: 100svh;
+}
+.landing h1 {
+  color: var(--main-color);
+}
+.landing .info button {
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+.landing .info button:hover {
+  background-color: #02751f !important;
+  color: #fff !important;
+}
+.landing .feature p {
+  background-color: #cccccc3e;
+  color: #fff;
+}
+.landing .feature p i {
+  color: var(--main-color);
+}
+.landing .hero img {
+  width: 340px;
+  max-width: 340px;
+
+}

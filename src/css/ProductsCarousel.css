@@ -1,0 +1,28 @@
+:root {
+  --bg-color: #1e1e1e;
+  --main-color: #0bff46;
+  --second-color: #333333;
+  --second-main-color: #1f3225;
+}
+.product-carousel .box {
+  height: 500px;
+  height: fit-content !important;
+  background-color: var(--second-main-color);
+}
+
+.product-carousel .box .discount {
+  color: var(--main-color);
+}
+.product-carousel .box button {
+  background-color: var(--main-color);
+  width: 120px;
+  max-width: 120px;
+}
+.product-carousel .box button:hover {
+  background-color: #02751f;
+  color: #fff;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important;
+}

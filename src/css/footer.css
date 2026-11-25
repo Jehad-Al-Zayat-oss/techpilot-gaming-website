@@ -1,0 +1,62 @@
+:root {
+  --bg-color: #2d2d2d;
+  --main-color: #0bff46;
+  --second-color: #333333;
+}
+footer {
+  background-color: var(--bg-color);
+}
+footer .links ul li a {
+  transition: 0.3s;
+}
+footer .links ul li a:hover {
+  transform: translateX(10px);
+  color: var(--main-color) !important;
+}
+footer .newsletter .input-group {
+  border: 2px solid var(--main-color);
+  width: fit-content;
+}
+footer .newsletter input[type="email"] {
+  height: 35px;
+  width: 65%;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border: none;
+  background-color: #273c2d;
+  color: white;
+}
+footer .newsletter input[type="submit"] {
+  height: 35px;
+  width: 35%;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border: none;
+  background-color: var(--main-color);
+  transition: 0.3s;
+}
+footer .newsletter input[type="submit"],
+footer .newsletter input[type="email"]:focus {
+  outline: none;
+}
+::placeholder {
+  color: white !important;
+}
+footer .newsletter input[type="submit"]:hover {
+  background-color: #02751f !important;
+  color: #fff !important;
+}
+footer .icon a {
+  background-color: #273c2d;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+footer .icon a:hover {
+  transform: scale(1.2);
+  background-color: var(--main-color);
+  color: var(--bg-color) !important;
+}
+.copyright {
+  background-color: var(--second-color);
+}

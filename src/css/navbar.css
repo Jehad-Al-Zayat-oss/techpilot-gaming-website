@@ -1,0 +1,72 @@
+:root {
+  --main-color: #0bff46;
+}
+.navbar {
+  background-color: #000 !important;
+}
+.navbar .navbar-brand > a {
+  color: #fff !important;
+  transition: 0.3s;
+}
+.navbar .logo a span {
+  color: var(--main-color) !important;
+}
+.navbar .phone {
+  background-color: var(--main-color);
+}
+.navbar .phone > i {
+  animation: phone 0.8s infinite linear forwards;
+}
+.navbar .active {
+  background-color: var(--main-color) !important;
+  color: #000 !important;
+  border-radius: 2rem !important;
+}
+.navbar .navbar-nav a {
+  transition: 0.3s;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+  border-radius: 2rem !important;
+}
+.navbar .navbar-nav a::before {
+  content: "";
+  left: 10%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: 0.3s;
+  z-index: -1;
+  background-color: var(--main-color);
+}
+.navbar .navbar-nav a:hover:not(.active, .phone)::before {
+  width: 150%;
+  height: 150%;
+  border-radius: 2rem !important;
+}
+.navbar .navbar-nav a:not(.phone):hover {
+  color: #000 !important;
+  background-color: #cccccc6b;
+}
+.navbar .navbar-nav .phone:hover {
+  background-color: #02751f !important;
+  color: #fff !important;
+}
+.navbar .navbar-toggler {
+  color: var(--main-color);
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+  border: 1px solid var(--main-color);
+}
+@keyframes phone {
+  from {
+    transform: rotate(10deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
